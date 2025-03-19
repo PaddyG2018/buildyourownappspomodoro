@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timer {
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress {
+    width: 100%;
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 1s linear;
+}
+
+.controls button, .mode-switches button {
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.controls button:hover, .mode-switches button:hover {
+    background-color: #45a049;
+}
+
+.mode-switches {
+    margin-top: 1rem;
+}
+
+.mode-switches button {
+    background-color: #808080;
+}
+
+.mode-switches button.active {
+    background-color: #4CAF50;
+}
+
+.mode-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#workRestToggle {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#workRestToggle:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#workRestToggle.rest-mode {
+    background-color: #2196F3;
+}
+
+#workRestToggle.rest-mode:hover {
+    background-color: #1976D2;
+} 
